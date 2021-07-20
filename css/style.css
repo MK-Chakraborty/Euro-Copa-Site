@@ -41,6 +41,61 @@ main {
     align-items: center;
 }
 
+
+/* --------------------------------------- *\
+                Navber Section
+/* ---------------------------------------- */
+
+.for-mobile,
+.navbar-logIn {
+    width: 100%;
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-btn a,
+.menu a {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.menu a {
+    padding-right: 36px;
+}
+
+.menu a:hover {
+    color: #E02C6D;
+}
+
+.login-btn a {
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+
+.login-btn a:hover {
+    background: #2f90eb;
+}
+
+.fa-sign-in-alt {
+    padding-right: 8px;
+}
+
+.for-mobile {
+    display: none;
+}
+
+
+
 /* --------------------------------------- *\
                 Banner Section
 /* ---------------------------------------- */
@@ -381,6 +436,43 @@ footer {
         width: 100%;
     }
 
+    /* Navbar part query */
+
+    .navbar {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu i {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    .menu ul li ul {
+        background: #2d25a0a8;
+        display: none;
+    }
+
+    .menu ul li:hover ul {
+        display: inline-block;
+    }
+
+    .menu ul li:hover .fas {
+        visibility: hidden;
+    }
+
+    .login-btn a {
+        padding: 10px 5px;
+    }
+
+    .navbar-logIn {
+        display: none;
+    }
+
+    .for-mobile {
+        display: block;
+    }
+
     /* Banner part query */
 
     .banner-content {
@@ -531,6 +623,32 @@ footer {
     .container {
         width: 100%;
     }
+
+    /* Navbar part query */
+
+    .navbar-logIn {
+        width: 100%;
+        background: #2D25A0;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    
+    .navbar {
+        justify-content: space-around;
+    }
+    
+    .login-btn a,
+    .menu a {
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .menu a {
+        padding-right: 16px;
+    }
+
 
     /* Banner part query */
 
